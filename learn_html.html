@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    code, pre {
+      background-color: #e8e8e8;
+      padding: 10px;
+      border-radius: 5px;
+      display: block;
+      font-family: Consolas, "Courier New", monospace;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Introduction to HTML</h1>
+  <p>
+    HTML (HyperText Markup Language) is the standard language used to create web pages. It provides the structure of a webpage and allows developers to define elements like headings, paragraphs, images, links, tables, and more.
+  </p>
+
+  <h2>1. Basic Structure of an HTML Document</h2>
+  <p>Every HTML document follows a basic structure:</p>
+  <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+  <h2>2. HTML Elements</h2>
+  <p>HTML consists of elements. Each element has a start tag, content, and an end tag:</p>
+  <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+  <h2>3. Common HTML Elements</h2>
+  <ul>
+    <li><strong>Headings:</strong> Used to define headings from &lt;h1&gt; (largest) to &lt;h6&gt; (smallest).</li>
+    <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre>
+
+    <li><strong>Paragraphs:</strong> Define text blocks.</li>
+    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <li><strong>Links:</strong> Used to navigate to other pages or websites.</li>
+    <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+    <li><strong>Images:</strong> Embed images on a page.</li>
+    <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+
+    <li><strong>Lists:</strong> There are ordered (numbered) and unordered (bulleted) lists.</li>
+    <pre><code>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+    <li><strong>Tables:</strong> Used to display data in rows and columns.</li>
+    <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  </ul>
+
+  <h2>4. Forms and Input Elements</h2>
+  <p>Forms allow user input and interaction:</p>
+  <pre><code>&lt;form action="submit.php" method="post"&gt;
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+  <h2>5. Semantic HTML</h2>
+  <p>Semantic HTML provides meaning to the structure of a document:</p>
+  <ul>
+    <li><code>&lt;header&gt;</code>: Defines the header section.</li>
+    <li><code>&lt;nav&gt;</code>: Defines navigation links.</li>
+    <li><code>&lt;main&gt;</code>: Defines the main content of the page.</li>
+    <li><code>&lt;article&gt;</code>: Represents self-contained content.</li>
+    <li><code>&lt;footer&gt;</code>: Defines the footer section.</li>
+  </ul>
+
+  <h2>6. HTML Attributes</h2>
+  <p>Attributes provide additional information about an element. Common attributes include:</p>
+  <ul>
+    <li><strong>href:</strong> Specifies the link URL for &lt;a&gt; tags.</li>
+    <li><strong>src:</strong> Specifies the source for images.</li>
+    <li><strong>alt:</strong> Provides alternate text for images.</li>
+    <li><strong>id:</strong> Assigns a unique identifier to an element.</li>
+    <li><strong>class:</strong> Assigns a class name for styling.</li>
+  </ul>
+
+  <h2>7. HTML Comments</h2>
+  <p>Comments are not displayed in the browser and are used for documentation:</p>
+  <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
+
+  <h2>8. HTML Forms</h2>
+  <p>Forms collect user input and send it to a server for processing:</p>
+  <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+  &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+
+  <h2>9. HTML Best Practices</h2>
+  <ul>
+    <li>Use semantic tags for better structure and accessibility.</li>
+    <li>Validate your HTML to ensure it follows the proper syntax.</li>
+    <li>Use descriptive alt text for images.</li>
+    <li>Keep your code clean and organized with indentation and comments.</li>
+  </ul>
+
+  <h2>10. Conclusion</h2>
+  <p>HTML is the foundation of web development. By mastering its structure, elements, and best practices, you can create well-structured, accessible, and user-friendly web pages.</p>
+
+</body>
+</html>
