@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Basics - Stoner Web Academy</title>
+    <title>Comprehensive HTML Basics - Stoner Web Academy</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,6 +14,9 @@
         }
         h1, h2 {
             color: #2c3e50;
+        }
+        h3 {
+            color: #34495e;
         }
         code {
             background-color: #e8e8e8;
@@ -26,20 +29,22 @@
             background-color: #f7f7f7;
             padding: 10px;
             border-radius: 5px;
+            overflow-x: auto;
         }
-        ul {
+        ul, ol {
             margin-left: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>HTML Basics</h1>
-    <p>Welcome to the **Stoner Web Academy's** guide to HTML basics! This is your roadmap to becoming a web design pro. Below is everything you’ll learn, starting from the basics to advanced topics.</p>
+    <h1>Comprehensive HTML Basics</h1>
+    <p>Welcome to Stoner Web Academy’s full guide to mastering HTML. This guide will walk you through all essential topics, from basics to advanced concepts.</p>
 
     <h2>1. What is HTML?</h2>
-    <p>HTML stands for <strong>HyperText Markup Language</strong>. It’s the foundation of all websites and is used to structure web content.</p>
+    <p>HTML (HyperText Markup Language) is used to structure content on the web. It is the backbone of all web pages, defining the structure of headings, paragraphs, images, links, lists, and more.</p>
 
     <h2>2. Basic HTML Document Structure</h2>
+    <p>An HTML document has the following structure:</p>
     <pre>
 <code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -47,22 +52,40 @@
         &lt;title&gt;Page Title&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;h1&gt;Hello, World!&lt;/h1&gt;
+        &lt;h1&gt;Welcome to HTML&lt;/h1&gt;
+        &lt;p&gt;This is a basic HTML page.&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code>
     </pre>
 
     <h2>3. Common HTML Tags</h2>
-    <ul>
-        <li><code>&lt;h1&gt; to &lt;h6&gt;</code>: Headings</li>
-        <li><code>&lt;p&gt;</code>: Paragraphs</li>
-        <li><code>&lt;a href="url"&gt;</code>: Links</li>
-        <li><code>&lt;img src="url" alt="description"&gt;</code>: Images</li>
-    </ul>
+    <h3>Headings</h3>
+    <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>:</p>
+    <pre>
+<code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Third-level heading&lt;/h3&gt;
+</code>
+    </pre>
+
+    <h3>Paragraphs</h3>
+    <p>Use the <code>&lt;p&gt;</code> tag to create paragraphs:</p>
+    <pre>
+<code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code>
+    </pre>
+
+    <h3>Bold and Italic Text</h3>
+    <p>Use <code>&lt;strong&gt;</code> for bold text and <code>&lt;em&gt;</code> for italicized text:</p>
+    <pre>
+<code>&lt;strong&gt;Bold Text&lt;/strong&gt;
+&lt;em&gt;Italic Text&lt;/em&gt;
+</code>
+    </pre>
 
     <h2>4. Lists</h2>
-    <h3>Unordered List:</h3>
+    <h3>Unordered List</h3>
+    <p>An unordered list displays items with bullet points:</p>
     <pre>
 <code>&lt;ul&gt;
     &lt;li&gt;Item 1&lt;/li&gt;
@@ -71,7 +94,8 @@
 </code>
     </pre>
 
-    <h3>Ordered List:</h3>
+    <h3>Ordered List</h3>
+    <p>An ordered list displays items with numbers:</p>
     <pre>
 <code>&lt;ol&gt;
     &lt;li&gt;Step 1&lt;/li&gt;
@@ -81,16 +105,19 @@
     </pre>
 
     <h2>5. Links</h2>
+    <p>Links are created using the <code>&lt;a&gt;</code> tag:</p>
     <pre>
 <code>&lt;a href="https://stonerwebacademy.com"&gt;Visit Stoner Web Academy&lt;/a&gt;</code>
     </pre>
 
     <h2>6. Images</h2>
+    <p>Use the <code>&lt;img&gt;</code> tag to display images:</p>
     <pre>
-<code>&lt;img src="image-url.jpg" alt="Description"&gt;</code>
+<code>&lt;img src="image.jpg" alt="Image description"&gt;</code>
     </pre>
 
     <h2>7. Tables</h2>
+    <p>Tables are created using the <code>&lt;table&gt;</code> tag:</p>
     <pre>
 <code>&lt;table&gt;
     &lt;tr&gt;
@@ -106,6 +133,7 @@
     </pre>
 
     <h2>8. Forms</h2>
+    <p>Forms collect user input:</p>
     <pre>
 <code>&lt;form&gt;
     &lt;label&gt;Name:&lt;/label&gt;
@@ -116,30 +144,27 @@
     </pre>
 
     <h2>9. Future Topics</h2>
-    <h3>CSS Basics:</h3>
+    <h3>CSS Basics</h3>
     <ul>
-        <li>Styling text, colors, and fonts</li>
-        <li>Layout techniques (flexbox and grid)</li>
-        <li>Responsive design</li>
+        <li>Text styling (colors, fonts)</li>
+        <li>Box model (padding, margins, borders)</li>
+        <li>Layouts (flexbox, grid)</li>
     </ul>
 
-    <h3>JavaScript Basics:</h3>
+    <h3>JavaScript Basics</h3>
     <ul>
-        <li>Adding interactivity to websites</li>
-        <li>Event handling (e.g., clicks, hover)</li>
-        <li>Basic programming concepts (variables, loops, functions)</li>
+        <li>Adding interactivity</li>
+        <li>Event handling (e.g., clicks)</li>
+        <li>Basic programming concepts (variables, loops)</li>
     </ul>
 
-    <h2>10. Final Project</h2>
-    <p>By the end of this course, you’ll create a fully functional webpage combining all the skills you’ve learned!</p>
-
-    <h2>11. Practice Exercises</h2>
+    <h2>10. Practice Exercises</h2>
     <ul>
-        <li>Create a webpage with a heading, paragraph, and list.</li>
-        <li>Link to another website and add an image.</li>
-        <li>Build a small table to display data (e.g., names and ages).</li>
+        <li>Create a webpage with headings, paragraphs, and lists.</li>
+        <li>Add an image and link to a favorite site.</li>
+        <li>Build a simple form to collect user input.</li>
     </ul>
 
-    <p>Keep learning and practicing. The journey to becoming a web developer starts here!</p>
+    <p>Keep practicing, and you’ll master web development in no time!</p>
 </body>
     </html>
