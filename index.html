@@ -7,32 +7,48 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #121212;
+            color: #ffffff;
             padding: 20px;
-            line-height: 1.6;
+            line-height: 1.8;
         }
-        h1, h2 {
-            color: #2c3e50;
+        h1, h2, h3 {
+            color: #03a9f4;
         }
-        h3 {
-            color: #34495e;
+        h1 {
+            border-bottom: 2px solid #03a9f4;
+            padding-bottom: 5px;
         }
-        code {
-            background-color: #e8e8e8;
-            padding: 4px;
-            font-size: 1rem;
-            border-radius: 4px;
-            display: inline-block;
+        a {
+            color: #03a9f4;
+            text-decoration: none;
         }
-        pre {
-            background-color: #f7f7f7;
+        a:hover {
+            text-decoration: underline;
+        }
+        code, pre {
+            background-color: #1e1e1e;
             padding: 10px;
             border-radius: 5px;
+            display: block;
+            color: #f1f1f1;
+            font-family: monospace;
             overflow-x: auto;
         }
         ul, ol {
             margin-left: 20px;
+        }
+        button {
+            background-color: #03a9f4;
+            color: #ffffff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0288d1;
         }
     </style>
 </head>
@@ -44,7 +60,6 @@
     <p>HTML (HyperText Markup Language) is used to structure content on the web. It is the backbone of all web pages, defining the structure of headings, paragraphs, images, links, lists, and more.</p>
 
     <h2>2. Basic HTML Document Structure</h2>
-    <p>An HTML document has the following structure:</p>
     <pre>
 <code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -61,104 +76,14 @@
 
     <h2>3. Common HTML Tags</h2>
     <h3>Headings</h3>
-    <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>:</p>
-    <pre>
-<code>&lt;h1&gt;Main Heading&lt;/h1&gt;
-&lt;h2&gt;Subheading&lt;/h2&gt;
-&lt;h3&gt;Third-level heading&lt;/h3&gt;
-</code>
-    </pre>
+    <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+    <h3>Paragraphs and Lists</h3>
+    <p>Learn how to structure paragraphs and lists using the proper HTML tags.</p>
 
-    <h3>Paragraphs</h3>
-    <p>Use the <code>&lt;p&gt;</code> tag to create paragraphs:</p>
-    <pre>
-<code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code>
-    </pre>
-
-    <h3>Bold and Italic Text</h3>
-    <p>Use <code>&lt;strong&gt;</code> for bold text and <code>&lt;em&gt;</code> for italicized text:</p>
-    <pre>
-<code>&lt;strong&gt;Bold Text&lt;/strong&gt;
-&lt;em&gt;Italic Text&lt;/em&gt;
-</code>
-    </pre>
-
-    <h2>4. Lists</h2>
-    <h3>Unordered List</h3>
-    <p>An unordered list displays items with bullet points:</p>
-    <pre>
-<code>&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
-</code>
-    </pre>
-
-    <h3>Ordered List</h3>
-    <p>An ordered list displays items with numbers:</p>
-    <pre>
-<code>&lt;ol&gt;
-    &lt;li&gt;Step 1&lt;/li&gt;
-    &lt;li&gt;Step 2&lt;/li&gt;
-&lt;/ol&gt;
-</code>
-    </pre>
-
-    <h2>5. Links</h2>
-    <p>Links are created using the <code>&lt;a&gt;</code> tag:</p>
-    <pre>
-<code>&lt;a href="https://stonerwebacademy.com"&gt;Visit Stoner Web Academy&lt;/a&gt;</code>
-    </pre>
-
-    <h2>6. Images</h2>
-    <p>Use the <code>&lt;img&gt;</code> tag to display images:</p>
-    <pre>
-<code>&lt;img src="image.jpg" alt="Image description"&gt;</code>
-    </pre>
-
-    <h2>7. Tables</h2>
-    <p>Tables are created using the <code>&lt;table&gt;</code> tag:</p>
-    <pre>
-<code>&lt;table&gt;
-    &lt;tr&gt;
-        &lt;th&gt;Name&lt;/th&gt;
-        &lt;th&gt;Age&lt;/th&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;John&lt;/td&gt;
-        &lt;td&gt;25&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-</code>
-    </pre>
-
-    <h2>8. Forms</h2>
-    <p>Forms collect user input:</p>
-    <pre>
-<code>&lt;form&gt;
-    &lt;label&gt;Name:&lt;/label&gt;
-    &lt;input type="text" name="name"&gt;
-    &lt;button type="submit"&gt;Submit&lt;/button&gt;
-&lt;/form&gt;
-</code>
-    </pre>
-
-    <h2>9. Future Topics</h2>
-    <h3>CSS Basics</h3>
-    <ul>
-        <li>Text styling (colors, fonts)</li>
-        <li>Box model (padding, margins, borders)</li>
-        <li>Layouts (flexbox, grid)</li>
-    </ul>
-
-    <h3>JavaScript Basics</h3>
-    <ul>
-        <li>Adding interactivity</li>
-        <li>Event handling (e.g., clicks)</li>
-        <li>Basic programming concepts (variables, loops)</li>
-    </ul>
-
-    <h2>10. Practice Exercises</h2>
+    <h2>4. Images, Links, and Tables</h2>
+    <p>Images, links, and tables are essential components of web content.</p>
+    
+    <h2>5. Practice Exercises</h2>
     <ul>
         <li>Create a webpage with headings, paragraphs, and lists.</li>
         <li>Add an image and link to a favorite site.</li>
@@ -167,4 +92,4 @@
 
     <p>Keep practicing, and you’ll master web development in no time!</p>
 </body>
-    </html>
+</html>
