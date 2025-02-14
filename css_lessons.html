@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Full Lesson</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Universal Selector: Applies to all elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Type Selector: Styles a specific type of element */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+    }
+
+    /* Class Selector: Targets elements with a specific class */
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+
+    /* ID Selector: Targets an element with a specific ID */
+    #main-title {
+      color: green;
+      text-align: center;
+    }
+
+    /* Group Selector: Applies the same styles to multiple elements */
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+
+    /* Text Styling */
+    p {
+      color: #333;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Box Model demonstration */
+    .box {
+      width: 200px;
+      padding: 20px;
+      border: 2px solid black;
+      margin: 10px;
+    }
+
+    /* Flexbox Layout demonstration */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Grid Layout demonstration */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    /* Media Queries: Applies styles for smaller screens */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    /* Pseudo-classes: Styling based on state */
+    a:hover {
+      color: red;
+    }
+
+    /* Pseudo-elements: Insert content before or after an element */
+    h1::before {
+      content: "★ ";
+    }
+
+    /* Transitions: Smooth changes to styles */
+    button {
+      padding: 10px 20px;
+      background-color: lightgray;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: lightblue;
+    }
+
+    /* Keyframe Animation */
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      animation: slideIn 2s;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="main-title">CSS Full Lesson</h1>
+
+  <h2>Selectors</h2>
+  <p>This is a <span class="highlight">highlighted</span> text using a class selector.</p>
+
+  <h2>Box Model</h2>
+  <div class="box">This is a box with padding, border, and margin.</div>
+
+  <h2>Flexbox Layout</h2>
+  <div class="flex-container">
+    <div>Flex Item 1</div>
+    <div>Flex Item 2</div>
+    <div>Flex Item 3</div>
+  </div>
+
+  <h2>Grid Layout</h2>
+  <div class="grid-container">
+    <div>Grid Item 1</div>
+    <div>Grid Item 2</div>
+    <div>Grid Item 3</div>
+  </div>
+
+  <h2>Media Queries</h2>
+  <p>Resize the window to see the text size change on smaller screens.</p>
+
+  <h2>Pseudo-classes</h2>
+  <a href="#">Hover over this link to see the effect.</a>
+
+  <h2>Pseudo-elements</h2>
+  <p>Look at the star before this heading to see a pseudo-element.</p>
+
+  <h2>Transitions</h2>
+  <button>Hover over me</button>
+
+  <h2>Animations</h2>
+  <div class="animated-box"></div>
+</body>
+</html>
